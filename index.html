@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo" aria-label="Company logo text">
+        <h1>My Company</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="#profile" class="nav-link">Our Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section" tabindex="0" aria-label="Home welcome and message us form">
+      <div class="container">
+        <h2 class="welcome-msg">Hi <span id="user-name-placeholder">Guest</span>, welcome to our website!</h2>
+
+        <form id="message-form" novalidate>
+          <fieldset>
+            <legend>Message Us</legend>
+
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" name="name" required aria-required="true" aria-describedby="name-error" />
+
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" name="email" required aria-required="true" aria-describedby="email-error" />
+
+            <label for="message-input">Message:</label>
+            <textarea id="message-input" name="message" rows="4" required aria-required="true" aria-describedby="message-error"></textarea>
+
+            <button type="submit" aria-label="Send your message">Send Message</button>
+          </fieldset>
+        </form>
+
+        <div id="form-output" role="alert" aria-live="polite" class="form-output" aria-atomic="true"></div>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section profile-section" tabindex="0" aria-label="Our profile page with company photo, about, vision and mission">
+      <div class="container">
+
+        <div class="photo-banner" role="img" aria-label="Photo banner - modern office building exterior with glass facade in daylight">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/98e0ad23-f3fc-4369-9294-e54cf82d7f23.png" alt="Modern office building exterior with glass facade in daylight" onerror="this.style.display='none'"/>
+        </div>
+
+        <article class="about-company">
+          <h2>About the Company</h2>
+          <p>
+            Since 2025, My Company has been at the forefront of technology and innovation, helping businesses around the globe adapt, grow, and thrive in a fast-changing digital world. We specialize in crafting cutting-edge software solutions, intuitive product designs, and comprehensive digital transformation strategies tailored to each client's unique needs.
+
+Driven by our commitment to excellence, integrity, and sustainability, we partner with organizations to unlock new possibilities and deliver real, lasting impact. Our diverse team of experts collaborates across disciplines and cultures to build smarter, more inclusive, and future-ready solutions — because we believe that technology, when used right, can create meaningful progress for businesses, communities, and the planet.
+          </p>
+        </article>
+
+        <article class="vision-mission">
+          <div class="vision">
+            <h3>Vision</h3>
+            <p>
+              To be a global leader in technology and innovation, driving positive change and creating lasting value for our clients and communities.
+            </p>
+          </div>
+          <div class="mission">
+            <h3>Mission</h3>
+            <ul>
+              <li>Deliver cutting-edge technology solutions tailored to client needs.</li>
+              <li>Maintain excellence and integrity in all business processes.</li>
+              <li>Foster a collaborative and inclusive work environment.</li>
+              <li>Commit to sustainable practices benefiting society and environment.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <p>© 2025 My Company. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
